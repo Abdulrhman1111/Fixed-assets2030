@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<div class="box">
+  <h2>لوحة التحكم</h2>
+
+  <button onclick="logout()">خروج</button>
+
+  <hr>
+
+  <input id="assetName" placeholder="اسم الأصل">
+  <input id="assetCode" placeholder="الكود">
+
+  <button onclick="addAsset()">إضافة</button>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>الاسم</th>
+        <th>الكود</th>
+        <th>حذف</th>
+      </tr>
+    </thead>
+    <tbody id="table"></tbody>
+  </table>
+</div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
